@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+.business-signup-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.business-signup-background{
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+.business-signup-title{
+    margin-top: 125px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 3;
+}
+.form-input{
+    width: 80vw;
+    height: 12vw;
+    border-radius: 50px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+.form-input > input{
+    width: 280px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+.submit{
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 12vw;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(179, 18, 76, 0.67) 100%, rgba(255, 255, 255, 0.18) 165.67%);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+#vergi-levhasi-icon{
+    justify-content: space-around;
+}
+#vergi-levhasi-icon > input{
+    width: 230px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+#vergi-levhasi-icon > svg{
+   position: relative;
+   right: 10px;
+}
+   
