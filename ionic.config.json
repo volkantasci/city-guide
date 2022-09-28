@@ -1,0 +1,7 @@
+{
+    "name": "cityguide",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }
