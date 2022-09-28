@@ -64,7 +64,9 @@ export default function SignUp() {
         </div>
         <div className='usertype-footer-text'>
             *Make a selection to continue
+
         </div>
+        
     </div>
   )
 }
