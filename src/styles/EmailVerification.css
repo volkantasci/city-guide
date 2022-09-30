@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+.email-verification-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.email-verification-background{
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.email-verification-tablet{
+    position: relative;
+    z-index: 2;
+    top: 175px;
+}
+.email-process{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    top: 180px;
+
+}
+.email-big-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.email-small-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;   
+    color: #FFFFFF;
+}
+
+
+.form-input{
+    width: 80vw;
+    height: 12vw;
+    border-radius: 50px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.email-verification-send{
+    width: 80vw;
+    height: 12vw;
+    border-radius: 50px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, rgba(179, 18, 76, 0.67) 100%, rgba(255, 255, 255, 0.18) 165.67%);
+}
