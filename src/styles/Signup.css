@@ -5,14 +5,24 @@ font-family: 'Poppins', sans-serif;
 
 .signup-background{
     position: absolute;
-    top: -40px;
+    top: 0;
     left: 0;
     width: 100vw;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/images/signup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.signup-background > svg{
+    margin-top: 37px;
 }
 
 .user-type-conteiner{
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 0;
     width: 100vw;
     height: 500px;
@@ -80,7 +90,7 @@ font-family: 'Poppins', sans-serif;
 
 .usertype-footer-text{
     position: absolute;
-    bottom: 29px;
+    top: 650px;
     left: 0;
     width: 100vw;
     display: flex;

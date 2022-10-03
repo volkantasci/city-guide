@@ -15,8 +15,20 @@ font-family: 'Poppins', sans-serif;
 }
 .business-signup-background{
     position: absolute;
-    top: -40px;
+    top: 0;
     left: 0;
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/images/businessSignup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.business-signup-background > svg{
+    margin-top: 37px;
 }
 .business-signup-title{
     margin-top: 125px;
@@ -47,7 +59,7 @@ font-family: 'Poppins', sans-serif;
     line-height: 27px;
 }
 .form-input > input{
-    width: 280px;
+    width: calc(80vw - 50px);
     height: 40px;
     outline: none;
     border: none;
@@ -61,6 +73,7 @@ font-family: 'Poppins', sans-serif;
     align-items: center;
     width: 80vw;
     height: 12vw;
+    min-height: 32px;
     border-radius: 50px;
     background: linear-gradient(180deg, rgba(179, 18, 76, 0.67) 100%, rgba(255, 255, 255, 0.18) 165.67%);
     font-family: 'Poppins';
@@ -74,7 +87,7 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-around;
 }
 #vergi-levhasi-icon > input{
-    width: 230px;
+    width: calc(80vw - 90px);
     height: 40px;
     outline: none;
     border: none;

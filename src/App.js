@@ -7,6 +7,11 @@ import SignUp from './pages/SignUp';
 import BusinessSignUp from './pages/BusinessSignUp';
 import UserSignUp from './pages/UserSignUp';
 import EmailVerification from './pages/EmailVerification';
+import Test from './pages/Test';
+import EnterCode from './pages/EnterCode';
+import UserProfile from './pages/UserProfile';
+import Wallet from './pages/Wallet';
+import SaveCard from './pages/SaveCard';
 
 function App() {
   return (
@@ -18,6 +23,10 @@ function App() {
       <Route path="/signup/business" element={<BusinessSignUp />}/>
       <Route path="/signup/user" element={<UserSignUp />}/>
       <Route path="/verify/email" element={<EmailVerification />}/>
+      <Route path="/verify/entercode" element={<EnterCode />}/>
+      <Route path="/user/profile" element={<UserProfile />}/>
+      <Route path="/user/wallet" element={<Wallet />}/>
+      <Route path="/user/savecard" element={<SaveCard />}/>
     </Routes>
   );
 }

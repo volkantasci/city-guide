@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+.page-title{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    top: 34px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile-container{
+    height: auto;
+    width: 100vw;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 180px;
+}
+.user-profile-header{
+    width: 100vw;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../assets/images/userProfileHeader.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profile-header-container{
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+    width: 100vw;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 36px;
+}
+.user-profile-username{
+    margin-left: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.user-profile-details-container{
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.user-profile-details{
+    width: calc(100vw - 72px);
+    height: 162px !important;
+    margin: 0 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(204,186,192,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(204,186,192,1);
+    box-shadow: 0px 0px 5px 1px rgba(204,186,192,1);
+}
+
+.details-titles{
+    width: 35%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #143441;
+    text-align: start;
+}
+.details-titles > div{
+    width: 100%;
+    margin-left: 30px;
+    
+}
+.details-info{
+    width: 55%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #143441;
+    opacity: 0.5;
+ 
+}
+.details-icons{
+    width: 20%;
+
+}
+.details-titles, .details-info, .details-icons{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-profile-button-container{
+    width: calc(100vw - 72px);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    top: -20px;  
+}
+
+.user-profile-button-container:last-of-type{
+    margin-bottom: 50px;
+}
+.user-profile-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(204,186,192,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(204,186,192,1);
+    box-shadow: 0px 0px 5px 1px rgba(204,186,192,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #143441;
+}
+
+.user-profile-help{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    background: linear-gradient(180deg, rgba(179, 18, 76, 0.67) 100%, rgba(255, 255, 255, 0.18) 165.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.user-profile-help-exit{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#gap{
+    width: 100vw;
+    height: 50px;
+}
