@@ -16,16 +16,12 @@ font-family: 'Poppins', sans-serif;
 
 .email-verification-background{
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 900px;
     display: flex;
     justify-content: center;
-    background-image: url(../assets/images/emailVerification.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    top: 0;
+    left: 0;
 }
 .email-verification-background > svg{
     margin-top: 37px;
@@ -34,18 +30,18 @@ font-family: 'Poppins', sans-serif;
 .email-verification-tablet{
     position: relative;
     z-index: 2;
-    top: 175px;
+    top: 150px;
 }
 .email-process{
     width: 100vw;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 3;
-    top: 180px;
+    top: 150px;
 
 }
 .email-big-title{
@@ -58,6 +54,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .email-small-title{
+    text-align: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -67,7 +64,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-.form-input-email-verification{
+.form-input-enter-code{
     width: 80vw;
     height: 12vw;
     border-radius: 50px;
@@ -85,11 +82,6 @@ font-family: 'Poppins', sans-serif;
     line-height: 27px;
 }
 
-.form-input-email-verification > input{
-    outline: none;
-    border: none;
-}
-
 .email-verification-send{
     width: 80vw;
     height: 12vw;
@@ -99,7 +91,7 @@ font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 150px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -108,3 +100,47 @@ font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     background: linear-gradient(180deg, rgba(179, 18, 76, 0.67) 100%, rgba(255, 255, 255, 0.18) 165.67%);
 }
+
+#verification-code-input{
+    position: relative;
+    width: calc(100vw - 100px);
+    height: 55px;
+    z-index: 2;
+    top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+#verification-code-input > input{
+    text-align: center;
+    border: none;
+    outline: none;
+    
+}
+#verification-code-input > input::placeholder{
+    text-align: center;
+}
+.send-again{
+    position: relative;
+    z-index: 2;
+    top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+

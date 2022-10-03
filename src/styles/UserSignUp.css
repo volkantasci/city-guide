@@ -14,8 +14,19 @@ font-family: 'Poppins', sans-serif;
 }
 .user-signup-background{
     position: absolute;
-    top: -40px;
+    top: 0;
     left: 0;
+    width: 100vw;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/images/userSignup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.user-signup-background > svg{
+    margin-top: 37px;
 }
 .user-sign-up-title{
     position: relative;
