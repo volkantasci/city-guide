@@ -1,8 +1,11 @@
 import React from 'react'
 import "../styles/Wallet.css"
 import Navigation from '../components/Navigation';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Wallet() {
+ 
   return (
     <div className='wallet-container'>
         <div className='wallet-header'>
@@ -158,7 +161,7 @@ export default function Wallet() {
             </div>
         </div>
         <div id="wallet-gap">
-        </div>
+        </div>        
         <Navigation />
     </div>
   )

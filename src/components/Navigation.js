@@ -76,7 +76,7 @@ export default function Navigation() {
                 <path d="M431 6H415.995C410.443 6 405.725 9.24814 403.801 13.6087C387.857 49.744 338.195 54.7189 316.984 12.8397C314.964 8.84993 310.439 6 305.263 6H0.999986V71H431V6Z" fill="white"/>
                 </g>
                 <defs>
-                <filter id="filter0_d_17_377" x="-5" y="0" width="438" height="73" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_d_17_377" x="-5" y="0" width="438" height="73" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                 <feOffset dx="-2" dy="-2"/>

@@ -1,11 +1,12 @@
 import React, { useEffect,useState } from 'react'
 import Header from '../components/Categories/Header'
-import { useParams } from 'react-router-dom';
+import { useParams,useLocation } from 'react-router-dom';
 import Subcategories from '../components/Categories/Subcategories';
 import Activities from '../components/Categories/Activities';
 import Navigation from '../components/Navigation';
 
 export default function Categories() {
+    
     const { category } = useParams();
     const [categoryData, setCategoryData] = useState(category);
 
