@@ -11,7 +11,7 @@ export default function EnterCode() {
     </g>
     <defs>
     <filter id="filter0_d_441_896" x="0.440002" y="0.320007" width="184.752" height="66.44" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
     <feOffset dy="4"/>
     <feGaussianBlur stdDeviation="2"/>

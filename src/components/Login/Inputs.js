@@ -22,7 +22,7 @@ export default function Inputs() {
 
   const handleSubmit = async () => {
     const data = await getTokensByCredentials(username,password);
-    if(data !== undefined || data !== null){
+    if(data){
       navigate("/");
     }
   };

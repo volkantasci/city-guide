@@ -14,7 +14,7 @@ export default function BusinessSignUp() {
             </g>
             <defs>
             <filter id="filter0_d_0_1" x="0.439941" y="0.320007" width="184.752" height="66.44" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feOffset dy="4"/>
             <feGaussianBlur stdDeviation="2"/>
@@ -24,7 +24,7 @@ export default function BusinessSignUp() {
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
             </filter>
             <filter id="filter1_d_0_1" x="130.3" y="43.76" width="72.1396" height="26.15" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feOffset dy="4"/>
             <feGaussianBlur stdDeviation="2"/>

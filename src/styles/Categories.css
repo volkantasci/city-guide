@@ -61,7 +61,7 @@ html {
 
 .subcategories{
     width: 100vw;
-    height: 150px;
+    height: 180px;
     position: absolute;
     top: 180px;
     left:0;
@@ -102,7 +102,6 @@ html {
     width: 100%;
     height: 4px;
     border-radius: 5px;
-    
     background: linear-gradient(180deg, rgba(179, 18, 76, 0.67) 19.11%, rgba(255, 255, 255, 0.18) 165.67%);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -117,7 +116,8 @@ html {
 }
 .subcategory-name{
     margin-top: 10px;
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .activities-container{
@@ -172,6 +172,13 @@ html {
 .activity-photo{
     position: absolute;
     top: 67px;
+    width: 90%;
+    height:60%;
+}
+.activity-photo > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .activity{
@@ -313,5 +320,13 @@ text-fill-color: transparent;
 }
 
 
+.no-activity{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #CC6086;
+
+}
 
 

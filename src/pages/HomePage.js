@@ -5,8 +5,8 @@ import Navigation from '../components/Navigation'
 import SearchBar from '../components/SearchBar'
 import Weather from '../components/Weather'
 
-export default function 
-() {
+export default function () {
+
   return (
     <div className='homepage-container'>
         <Header />
@@ -14,10 +14,6 @@ export default function
         <SearchBar />
         <Categories />
         <Navigation />
-
-
-
-
     </div>
   )
 }

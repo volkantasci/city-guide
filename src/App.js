@@ -6,6 +6,7 @@ import { MainContext } from "./Context";
 import HomePage from './pages/HomePage';
 import Categories from './pages/Categories';
 import Login from './pages/Login';
+import Logout from './pages/Logout';
 import SignUp from './pages/SignUp';
 import BusinessSignUp from './pages/BusinessSignUp';
 import UserSignUp from './pages/UserSignUp';
@@ -22,25 +23,36 @@ import { getToken,getAccessTokenByRefreshToken } from "./Auth/Token";
 function App() {
   const location = useLocation();
   const [error,setError] = useState(null);
+  const [categoryId,setCategoryId] = useState(0);
+  const [selectedSubCategory, setSelectedSubCategory] = useState(null);
   const navigate = useNavigate();
   const ContextData = {
     error,
-    setError
+    setError,
+    categoryId,
+    setCategoryId,
+    selectedSubCategory,
+    setSelectedSubCategory
   };
+  useEffect(() => {
+    console.log("selected Sub Category: ",selectedSubCategory);
+  },[selectedSubCategory]);
 
-  useEffect(async () => {
-    const token = await getToken();
+  useEffect(() => {
+    const getTokenAndNavigate = async () => {
+      const token = await getToken();
       if(token !== undefined && token !== null){
         if(location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/email-verification" || location.pathname === "/enter-code"){
           navigate("/");
         }
       }
       else{
-        if(location.pathname !== "/login" && location.pathname !== "/signup" && location.pathname !== "/email-verification" && location.pathname !== "/enter-code"){
+        if(location.pathname !== "/login" &&  location.pathname !== "/signup" &&  location.pathname !== "/email-verification" && location.pathname !== "/enter-code"){
           navigate("/login");
         }
-      }   
-    
+      } 
+    }
+    getTokenAndNavigate();
   },[]);
 
   return (
@@ -57,6 +69,7 @@ function App() {
         <Route path="/user/profile" element={<UserProfile />}/>
         <Route path="/user/wallet" element={<Wallet />}/>
         <Route path="/user/savecard" element={<SaveCard />}/>
+        <Route path="/logout" element={<Logout />}/>
       </Routes>
     </MainContext.Provider>
   );

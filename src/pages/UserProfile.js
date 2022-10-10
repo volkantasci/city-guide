@@ -14,7 +14,7 @@ export default function UserProfile() {
                 </g>
                 <defs>
                 <filter id="filter0_d_433_523" x="0.440002" y="0.320007" width="184.752" height="66.44" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                 <feOffset dy="4"/>
                 <feGaussianBlur stdDeviation="2"/>
@@ -159,20 +159,20 @@ export default function UserProfile() {
                             </g>
                             <defs>
                             <linearGradient id="paint0_linear_434_603" x1="12.1467" y1="15.5067" x2="12.1467" y2="21.4569" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B3124C" stop-opacity="0.67"/>
-                            <stop offset="1" stop-color="white" stop-opacity="0.18"/>
+                            <stop stopColor="#B3124C" stopOpacity="0.67"/>
+                            <stop offset="1" stopColor="white" stopOpacity="0.18"/>
                             </linearGradient>
                             <linearGradient id="paint1_linear_434_603" x1="11.8533" y1="18.8" x2="11.8533" y2="19.8945" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B3124C" stop-opacity="0.67"/>
-                            <stop offset="1" stop-color="white" stop-opacity="0.18"/>
+                            <stop stopColor="#B3124C" stopOpacity="0.67"/>
+                            <stop offset="1" stopColor="white" stopOpacity="0.18"/>
                             </linearGradient>
                             <linearGradient id="paint2_linear_434_603" x1="11.9612" y1="23.2455" x2="11.9612" y2="37.3079" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B3124C" stop-opacity="0.67"/>
-                            <stop offset="1" stop-color="white" stop-opacity="0.18"/>
+                            <stop stopColor="#B3124C" stopOpacity="0.67"/>
+                            <stop offset="1" stopColor="white" stopOpacity="0.18"/>
                             </linearGradient>
                             <linearGradient id="paint3_linear_434_603" x1="20" y1="7.83334" x2="20" y2="12.2114" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B3124C" stop-opacity="0.67"/>
-                            <stop offset="1" stop-color="white" stop-opacity="0.18"/>
+                            <stop stopColor="#B3124C" stopOpacity="0.67"/>
+                            <stop offset="1" stopColor="white" stopOpacity="0.18"/>
                             </linearGradient>
                             <clipPath id="clip0_434_603">
                             <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
@@ -186,8 +186,8 @@ export default function UserProfile() {
                             <path d="M7.875 3.875H2.625V21.875H7.875M16.125 7.625L21.375 12.875L16.125 18.125M8.625 12.875H21.375" stroke="url(#paint0_linear_434_599)" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
                             <defs>
                             <linearGradient id="paint0_linear_434_599" x1="12" y1="21.875" x2="12" y2="33.6958" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#B3124C" stop-opacity="0.67"/>
-                            <stop offset="1" stop-color="white" stop-opacity="0.18"/>
+                            <stop stopColor="#B3124C" stopOpacity="0.67"/>
+                            <stop offset="1" stopColor="white" stopOpacity="0.18"/>
                             </linearGradient>
                             </defs>
                             </svg>

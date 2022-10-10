@@ -15,8 +15,8 @@ export default function Header() {
             <path d="M0 0H428V213C428 213 329.236 258.245 233 261.5C131.489 264.934 0 213 0 213V0Z" fill="url(#paint0_linear_17_397)"/>
             <defs>
             <linearGradient id="paint0_linear_17_397" x1="-164.008" y1="-30.8639" x2="103.035" y2="508.279" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#EF1A6A"/>
-            <stop offset="1" stop-color="#EF1A6A" stop-opacity="0"/>
+            <stop stopColor="#EF1A6A"/>
+            <stop offset="1" stopColor="#EF1A6A" stopOpacity="0"/>
             </linearGradient>
             </defs>
         </svg>

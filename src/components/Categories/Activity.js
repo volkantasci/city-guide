@@ -1,22 +1,32 @@
 import React from 'react'
 import "../../styles/Categories.css";
+import { useParams } from 'react-router-dom';
 
-export default function Activity() {
+export default function Activity({data}) {
+    let { category } = useParams();
   return (
     <div className='activity'>
             <div className='activity-header'>
-                ATV SAFARI
+                {data.name}
             </div>
             <div className='activity-location'>
-                Kemerburgaz/Istanbul
+                {data.address.address}
             </div>
             <div className='activity-photo'>
-                <img src={ require("../../assets/images/safari.png") } alt={"photo"} />
+                {/* <img src={ require("../../assets/images/safari.png") } alt={"photo"} /> */}
+                <img src={ data.gallery.length > 0 ? data.gallery[0].image : null } alt={"photo"} />
             </div>
             <div className='activity-buttons'>
-                <div className='reservation'>
+                {category === "Museum" ? (
+                    <div className='reservation'>
+                        Buy Ticket
+                    </div>
+                ) : (
+                    <div className='reservation'>
                     Reservation
-                </div>
+                    </div>
+                )}
+                
                 <div className='go-location'>
                     How Can I go?
                 </div>
