@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import {getTokensByCredentials} from '../../Auth/Token'
+import {getTokensByCredentials, getToken, getAccessTokenByRefreshToken} from '../../Auth/Token'
 import "../../styles/Login.css"
 import {MainContext, useContext} from "../../Context.js";
 import {useNavigate} from "react-router-dom";
@@ -22,13 +22,12 @@ export default function Inputs() {
 
   const handleSubmit = async () => {
     const data = await getTokensByCredentials(username,password);
-    if(data){
+    console.log("Inputs TOKEN:",data);
+    if(data !== null && data !== undefined){
       navigate("/");
     }
   };
   
-
-
   return (
     <div className='login-input-section'>
         <div className='login-input-title'>

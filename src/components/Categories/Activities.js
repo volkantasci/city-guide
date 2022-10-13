@@ -25,8 +25,8 @@ export default function Activities({subCategoryId,noSubCategory}) {
 
   
   useEffect(() => {
-    console.log("Subcategory Data:",subCategoryData);
-  },[subCategoryData]);
+    console.log("company Data:",companyData);
+  },[companyData]);
 
   useEffect(() => {
     const getTokenAndActivities = async (catID) => {

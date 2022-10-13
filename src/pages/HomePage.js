@@ -6,7 +6,7 @@ import SearchBar from '../components/SearchBar'
 import Weather from '../components/Weather'
 
 export default function () {
-
+  
   return (
     <div className='homepage-container'>
         <Header />

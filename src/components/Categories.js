@@ -3,13 +3,14 @@ import { getCookie, setCookie, removeCookie } from "../Auth/CookieManagement";
 import {REFRESH_TOKEN_TIMEOUT,ACCESS_TOKEN_TIMEOUT}  from "../ENV";
 import {Link} from "react-router-dom";
 import {getToken} from "../Auth/Token";
+import Subcategories from './Categories/Subcategories';
 
 
 export default function Categories() {
     const [categories,setCategories] = useState([]);
-    
+
     const getCategoryData = async (token) => {
-        const response = await fetch("https://cityguide-api-zl7pd.ondigitalocean.app/default/topcategorylist",{
+        const response = await fetch("https://api.ctyguide.com/default/topcategorylist",{
             method: "GET",
             mode: "cors",
             headers: {
@@ -20,6 +21,10 @@ export default function Categories() {
         });
         const data = await response.json();
         if(response.status === 200){
+            data.reverse();
+            let swapData = data[7];
+            data[7] = data[10];
+            data[10] = swapData;
             setCategories(data);
         }
     }
@@ -27,10 +32,10 @@ export default function Categories() {
 
         const getTokenAndCategoryData = async () => {
             const token = await getToken();
+
             await getCategoryData(token);
         }
         getTokenAndCategoryData();
-       
     },[]);
 
   return (

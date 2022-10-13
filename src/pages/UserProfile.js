@@ -1,8 +1,10 @@
 import React from 'react'
 import Navigation from '../components/Navigation';
 import "../styles/UserProfile.css"
+import { useNavigate } from 'react-router-dom';
 
 export default function UserProfile() {
+    const navigate = useNavigate();
     const profileUsername = "ARIF YETER";
   return (
     <div className='user-profile-container'>
@@ -181,7 +183,9 @@ export default function UserProfile() {
                         </svg>
                         Yardım
                     </div>
-                    <div className='user-profile-help'>
+                    <div className='user-profile-help' onClick={() => {
+                        navigate('/logout');
+                    }}>
                         <svg  width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.875 3.875H2.625V21.875H7.875M16.125 7.625L21.375 12.875L16.125 18.125M8.625 12.875H21.375" stroke="url(#paint0_linear_434_599)" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
                             <defs>

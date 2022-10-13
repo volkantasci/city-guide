@@ -3,7 +3,7 @@ import {REFRESH_TOKEN_TIMEOUT,ACCESS_TOKEN_TIMEOUT}  from "../ENV";
 import { useNavigate } from "react-router-dom";
 
 const getTokensByCredentials = async (username, password) => {
-    const response = await fetch("https://cityguide-api-zl7pd.ondigitalocean.app/api/token/",{
+    const response = await fetch("https://api.ctyguide.com/api/token/",{
         method: "POST",
         mode: "cors",
         headers: {
@@ -30,7 +30,7 @@ const getAccessTokenByRefreshToken = async () => {
     if (refreshToken) {
         const refreshTokenExpireTime = localStorage.getItem("refreshTokenExpireTime");
         if (Math.ceil(new Date().getTime()/1000) < refreshTokenExpireTime) {
-            const response = await fetch("https://cityguide-api-zl7pd.ondigitalocean.app/api/token/refresh/",{
+            const response = await fetch("https://api.ctyguide.com/api/token/refresh/",{
                 method: "POST",
                 mode: "cors",
                 headers: {

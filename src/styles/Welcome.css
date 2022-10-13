@@ -1,0 +1,34 @@
+.welcome-video-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#part1, #part2{
+    width: 100vw;
+    height: 50vh;
+}
+#part1{
+    background-color: rgb(189, 56, 59);
+}
+#part2{
+    background-color: rgb(233, 85, 148);
+}
+.welcome-video{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video{
+    height: 100vh;
+}
+

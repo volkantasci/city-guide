@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+.select-card-total-price{
+    position: relative;
+    z-index: 2;
+    width: 80vw;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 52px;
+    color: #B3124C;
+    background-color: #fff;
+}
+.payment-container{
+    width: 100vw;
+}
+.payment-background{
+    position: absolute;
+    width: 100vw;
+    height: 261px;
+    top: 0;
+    left: 0;
+    background-image: url(../assets/images/payment_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.payment-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.payment-back-button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 32px;
+}
+.payment-cards-container{
+    margin-top: 100px;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.payment-cards{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.payment-add-card{
+    margin-top: 200px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+    box-shadow: 0px 0px 5px 1px rgba(224,224,224,1);
+}
+
+.payment-save-button{
+    width: 50vw;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7EAE;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.payment-card-expiration , .payment-card-cvv{
+    width: 90% !important;
+
+}
+.payment-card-expiration-input > input{
+    width: 100%;
+}
+
+.payment-cc{
+    background-color: #FF7EAE;
+}
+.payment-devam{
+    width: 80vw;
+    height: 50px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ff3e85;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.add-credit-card{
+    width: calc(100% - 48px);
+    margin: 20px 23px 0px 23px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+    box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+    border-radius: 15px;
+    background-color: #fff;
+    padding-left: 24px;
+}
+.add-credit-card > svg{
+    margin-right: 20px;
+}
+.add-card-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.select-card-add-credit-card{
+    position: inherit;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(189,189,189,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(189,189,189,1);
+    box-shadow: 0px 0px 20px 0px rgba(189,189,189,1);
+}
+.select-card-payment-container{
+    flex-direction: column;
+}

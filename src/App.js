@@ -18,6 +18,9 @@ import Wallet from './pages/Wallet';
 import SaveCard from './pages/SaveCard';
 import {getCookie, setCookie, removeCookie} from "./Auth/CookieManagement";
 import { getToken,getAccessTokenByRefreshToken } from "./Auth/Token";
+import SelectCardToPayment from './pages/SelectCardToPayment';
+import Payment from './pages/Payment';
+import Welcome from './pages/Welcome';
 
 
 function App() {
@@ -25,6 +28,10 @@ function App() {
   const [error,setError] = useState(null);
   const [categoryId,setCategoryId] = useState(0);
   const [selectedSubCategory, setSelectedSubCategory] = useState(null);
+  const [welcomeVideo, setWelcomeVideo] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState(null);
+  const [addCardComponentActive, setAddCardComponentActive] = useState(false);
+  const [editDeleteData, setEditDeleteData] = useState(false);
   const navigate = useNavigate();
   const ContextData = {
     error,
@@ -32,44 +39,61 @@ function App() {
     categoryId,
     setCategoryId,
     selectedSubCategory,
-    setSelectedSubCategory
+    setSelectedSubCategory,
+    paymentMethod,
+    setPaymentMethod,
+    addCardComponentActive,
+    setAddCardComponentActive,
+    editDeleteData,
+    setEditDeleteData
   };
-  useEffect(() => {
-    console.log("selected Sub Category: ",selectedSubCategory);
-  },[selectedSubCategory]);
+
+  // useEffect(() => {
+  //   navigate("/welcome");
+  // },[]);
+  const whenBrowserClosed = () => {
+    window.addEventListener("beforeunload", (ev) => 
+      {  
+          ev.preventDefault();
+          localStorage.removeItem("welcomeState");
+      });
+  }
+
+  const whenBrowserOpened = () => {
+    if(localStorage.getItem("welcomeState") === null){
+      localStorage.setItem("welcomeState",true);
+      navigate("/welcome");
+    }
+  }
 
   useEffect(() => {
-    const getTokenAndNavigate = async () => {
-      const token = await getToken();
-      if(token !== undefined && token !== null){
-        if(location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/email-verification" || location.pathname === "/enter-code"){
-          navigate("/");
-        }
-      }
-      else{
-        if(location.pathname !== "/login" &&  location.pathname !== "/signup" &&  location.pathname !== "/email-verification" && location.pathname !== "/enter-code"){
-          navigate("/login");
-        }
-      } 
-    }
-    getTokenAndNavigate();
+    whenBrowserClosed();
+    whenBrowserOpened();
   },[]);
 
   return (
     <MainContext.Provider value={ContextData}>
       <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/categories/:category" element={<Categories />}/>
+        <Route path="/welcome" element={<Welcome />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/signup/business" element={<BusinessSignUp />}/>
         <Route path="/signup/user" element={<UserSignUp />}/>
         <Route path="/verify/email" element={<EmailVerification />}/>
         <Route path="/verify/entercode" element={<EnterCode />}/>
+
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/categories/:category" element={<Categories />}/>
         <Route path="/user/profile" element={<UserProfile />}/>
         <Route path="/user/wallet" element={<Wallet />}/>
         <Route path="/user/savecard" element={<SaveCard />}/>
+        <Route path="/select-card" element={<SelectCardToPayment />}/>
+        <Route path="/payment" element={<Payment />}/>
         <Route path="/logout" element={<Logout />}/>
+
+        
+
+
       </Routes>
     </MainContext.Provider>
   );

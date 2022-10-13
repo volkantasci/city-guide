@@ -7,22 +7,30 @@ html {
     scrollbar-width: none !important;
   }
 
+
+.categories-container{
+    transition: 2s;
+}
+
 .category-header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 300px;
+    background-color: #fff;
 }
 .back-button{
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 55px;
     left: 25px;
 }
 .category-name-title{
     width: 100vw;
     height: 60px;
-    position: absolute;
+    position: fixed;
     top: 100px;
     display: flex;
     justify-content: center;
@@ -54,7 +62,7 @@ html {
 .show-maps{
     width: 74px;
     height: 54px;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: calc(100vw - 16px - 74px);
 }
@@ -62,13 +70,14 @@ html {
 .subcategories{
     width: 100vw;
     height: 180px;
-    position: absolute;
+    position: fixed;
     top: 180px;
     left:0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     overflow-y: scroll;
+    background-color: #fff;
 }
 .subcategories::-webkit-scrollbar{
     display: none;
@@ -86,8 +95,8 @@ html {
 }
 
 .subcategory-image{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin-left: 5px;
     border-radius: 15px;
     display: flex;
@@ -110,7 +119,7 @@ html {
 
 .category-header > svg{
     width: 100vw;
-    position: absolute;
+    position: fixed;
     top: -10px;
     left:0;
 }
@@ -125,12 +134,13 @@ html {
     top: 335px;
     width: 100%;
     height: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+    z-index: -1;
+    margin-top: 20px;
 }
 
 .activity{
@@ -326,7 +336,16 @@ text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #CC6086;
-
 }
+
+#subcategory{
+    animation-name:subCategorySlideEffect;
+    animation-duration: 2s;
+}
+@keyframes subCategorySlideEffect {
+    0%   {left:0px;}
+    50%  {left:50px;}
+    100% {left:0px;}
+  }
 
 

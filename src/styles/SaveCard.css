@@ -101,7 +101,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .card-expiration-input > input{
-    width: 60%;
+    width: 90%;
     height: 47px;
     border-radius: 15px;
     border: 1px solid rgb(210, 208, 208);
@@ -127,4 +127,45 @@ font-family: 'Poppins', sans-serif;
 .add-card-save{
     position: relative;
     top: -100px;
+}
+
+.edit-or-delete-card{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+.edit-or-delete-card > div{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(179, 18, 76, 0.67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.fill-card-save-button{
+    width: 70%;
+    height: 40px;
+    background-color: rgba(179, 18, 76, 0.67);
+    border-radius: 40px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
 }

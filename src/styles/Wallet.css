@@ -187,9 +187,18 @@ font-family: 'Poppins', sans-serif;
     margin-left: 10px;
 }
 .grey-dot{
-    margin-right: 10px;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.grey-dot > svg{
+    width: 20px;
+    height: 20px;
+    color: #BDBDBD;
+}
+/* 
 .add-credit-card{
     width: calc(100% - 24px);
     margin: 6px 12px;
@@ -201,7 +210,7 @@ font-family: 'Poppins', sans-serif;
     border-radius: 15px;
     background-color: rgba(254, 235, 242, 1);
     padding-left: 24px;
-}
+} */
 #wallet-gap{
     width: 100vw;
     height: 150px;

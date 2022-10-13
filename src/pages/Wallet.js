@@ -25,7 +25,7 @@ export default function Wallet() {
                     Total Price
                 </div>
                 <div className='payment-total-price-amount'>
-                    $ 2,280.00
+                    $ 70.00
                 </div>
             </div>
             <div className='payment-icon'>

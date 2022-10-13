@@ -7,7 +7,7 @@ export default function Subcategories({subCategoryData,selected}) {
     const [subCategory, setSubCategory] = useState(subCategoryData);
    
     return (
-    <div className='subcategories'>
+    <div className='subcategories' id="subcategory">
       {subCategoryData.map((subcategory,index) => {      
         return (
           <Subcategory selected={subcategory.id === selected ? true : false} subcategory={subcategory} key={index} />
