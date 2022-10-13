@@ -11,19 +11,7 @@ export default function Welcome() {
         setTimeout(() => {
             if(location.pathname === "/welcome"){
             
-                const getTokenAndNavigate = async () => {
-                    const token = await getToken();
-                    console.log("STARTER TOKEN:",token);
-                    if(token !== null){
-                      if(location.pathname === "/welcome" || location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/email-verification" || location.pathname === "/enter-code"){
-                        navigate("/");
-                      }
-                    }
-                    else{
-                      navigate("/login");
-                    } 
-                  }
-                  getTokenAndNavigate();
+                
                 
             }
         }, 1800);

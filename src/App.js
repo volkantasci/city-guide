@@ -48,29 +48,38 @@ function App() {
     setEditDeleteData
   };
 
-  // useEffect(() => {
-  //   navigate("/welcome");
-  // },[]);
-  const whenBrowserClosed = () => {
-    window.addEventListener("beforeunload", (ev) => 
-      {  
-          ev.preventDefault();
-          localStorage.removeItem("welcomeState");
-          alert("deneme123");
-      });
+ 
+  // const whenBrowserClosed = () => {
+  //   window.addEventListener("beforeunload", (ev) => 
+  //     {  
+  //         localStorage.removeItem("welcomeState");
+  //     });
+  // }
 
-  }
 
-  const whenBrowserOpened = () => {
-    if(localStorage.getItem("welcomeState") === null){
-      localStorage.setItem("welcomeState",true);
-      navigate("/welcome");
-    }
-  }
+  // const whenBrowserOpened = () => {
+  //   if(localStorage.getItem("welcomeState") === null){
+  //     localStorage.setItem("welcomeState",true);
+  //     navigate("/welcome");
+  //   }
+  // }
 
   useEffect(() => {
-    whenBrowserOpened();
-    return whenBrowserClosed();
+    // whenBrowserOpened();
+    // whenBrowserClosed();
+    const getTokenAndNavigate = async () => {
+      const token = await getToken();
+      console.log("STARTER TOKEN:",token);
+      if(token !== null){
+        if(location.pathname === "/welcome" || location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/email-verification" || location.pathname === "/enter-code"){
+          navigate("/");
+        }
+      }
+      else{
+        navigate("/login");
+      } 
+    }
+    getTokenAndNavigate();
   },[]);
 
   return (
