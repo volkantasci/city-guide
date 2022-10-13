@@ -56,7 +56,9 @@ function App() {
       {  
           ev.preventDefault();
           localStorage.removeItem("welcomeState");
+          alert("deneme123");
       });
+
   }
 
   const whenBrowserOpened = () => {
