@@ -67,8 +67,8 @@ function App() {
   }
 
   useEffect(() => {
-    whenBrowserClosed();
     whenBrowserOpened();
+    return whenBrowserClosed();
   },[]);
 
   return (
