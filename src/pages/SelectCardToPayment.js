@@ -34,7 +34,7 @@ export default function SelectCardToPayment() {
         
         <div className='payment-cards-container select-card-payment-container'>
         <div className='select-card-total-price'>
-            Total Price: $ 70.00
+            Total Price: ₺ 70.00
         </div>
             <div className='show-ccs payment-cards'>
                 <div className='show-ccs-header'>
