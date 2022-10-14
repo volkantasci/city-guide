@@ -68,7 +68,7 @@ export default function Payment() {
             </div>
             <div className='payment-previous-price'>
                 <del>
-                $ 70.00
+                ₺ 70.00
                 </del>
                 
             </div>
