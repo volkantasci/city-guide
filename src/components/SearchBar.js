@@ -3,7 +3,7 @@ import "../styles/Homepage.css";
 
 export default function SearchBar() {
   return (
-    <div className='w-100 d-flex justify-content-center'>
+    <div className='w-100 d-flex justify-content-center homePage-searchbar'>
         <div className='searchBar-container'>
             <input className='searchBar' type='text' placeholder='Ask Me!' />
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

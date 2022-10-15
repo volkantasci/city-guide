@@ -7,7 +7,7 @@ export default function Navigation() {
     <div className='navigation-container'>
         <div className='navigation'>
             <div id='home-button' onClick={() => {
-                navigate("/");
+                navigate("/home");
             }}>
                 <svg width="27" height="31" viewBox="0 0 27 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.5833 18.4167H16.4167V28.625H10.5833V18.4167Z" fill="url(#paint0_linear_17_257)"/>

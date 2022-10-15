@@ -39,7 +39,7 @@ export default function Categories() {
     },[]);
 
   return (
-    <div className='categories-container'>
+    <div className='homepage-categories-container'>
        <div className='categories'>
         {categories.map((category,index) => {
             return (

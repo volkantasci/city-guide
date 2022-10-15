@@ -9,7 +9,7 @@ export default function Header({showAlcohol,categoryName}) {
     const navigate = useNavigate();
     let { category } = useParams();
     const handleBackButton = () => {
-        navigate("/");
+        navigate("/home");
     }
   return (
     <div className='category-header' style={{"height" : category === "History" || category === "Nature" || category === "Museums" ? "200px" : null}}>
@@ -25,7 +25,7 @@ export default function Header({showAlcohol,categoryName}) {
         </div>
         
         <svg onClick={() => {
-                navigate("/");
+                navigate("/home");
             }} width="100%"  height="141" viewBox="0 0 428 141" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H428V115.591C428 115.591 298.5 141 208.5 141C106.971 141 0 115.591 0 115.591V0Z" fill="url(#paint0_linear_0_1)"/>
             <path 

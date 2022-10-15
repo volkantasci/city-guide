@@ -16,7 +16,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .app-logo{
-    position: absolute;
+    position: fixed;
     top: 0;
     left:0;
 
@@ -32,10 +32,12 @@ font-family: 'Poppins', sans-serif;
 
 
 .weather-container{
+    position: fixed;
+    top: 20px;
+    left: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     justify-content: flex-start;
     margin-top: 110px;
@@ -110,6 +112,13 @@ font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 700;
 }
+.homePage-searchbar{
+    position: fixed;
+    top: 360px;
+    left: 0;
+    z-index: 2;
+
+}
 
 .searchBar-container{
     width: calc(100% - 68px);
@@ -120,8 +129,8 @@ font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 15px;
     background: rgba(211, 94, 136, 0.11);
-    margin-top: 21px;
     padding: 10px;
+    z-index: 3;
     
 }
 
@@ -146,17 +155,21 @@ input[type="text"]{
     color: rgba(190, 20, 82, 0.62) !important;
 }
 
-.categories-container{
+.homepage-categories-container{
+    position: absolute;
+    top: 400px;
+    left: 0;
     width: 100%;
-    height: auto;
-    margin-top: 5px;
-    margin-bottom: 100px;
+    height: calc(100vh - 470px);
+    overflow-y: scroll;
+    z-index: -3;
  
 }
 
 .categories{
     width: calc(100% - 48px);
     height: 100%;
+    margin-bottom: 100px;
     margin: 0px 24px;
     display: flex;
     justify-content: space-between;

@@ -24,7 +24,7 @@ export default function Inputs() {
     const data = await getTokensByCredentials(username,password);
     console.log("Inputs TOKEN:",data);
     if(data !== null && data !== undefined){
-      navigate("/");
+      navigate("/home");
     }
   };
   

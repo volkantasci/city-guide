@@ -10,7 +10,7 @@ export default function Activities({subCategoryId,noSubCategory}) {
 
 
   const getActivities = async (token,subCategoryId) => {
-    const response = await fetch('https://api.ctyguide.com/company/companies',{
+    const response = await fetch('https://api.ctyguide.com/company/companies/',{
       method: "GET",
       mode: "cors",
       headers: {
@@ -23,10 +23,6 @@ export default function Activities({subCategoryId,noSubCategory}) {
     setCompanyData(data);
   }
 
-  
-  useEffect(() => {
-    console.log("company Data:",companyData);
-  },[companyData]);
 
   useEffect(() => {
     const getTokenAndActivities = async (catID) => {
@@ -47,7 +43,7 @@ export default function Activities({subCategoryId,noSubCategory}) {
 
 
   return (
-    <div className='activities-container' style={{"marginTop": noSubCategory ? "-150px" : ""}}>
+    <div className='activities-container' id="activities-container" style={{"marginTop": noSubCategory ? "-150px" : ""}}>
       {subCategoryData.length > 0 ? (
         subCategoryData.map((item,index) => {
           return (

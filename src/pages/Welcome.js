@@ -8,12 +8,20 @@ export default function Welcome() {
     const location = useLocation();
 
     useEffect(() => {
-        setTimeout(() => {
-            if(location.pathname === "/welcome"){
-            
-                
-                
+        const getTokenAndNavigate = async () => {
+            const token = await getToken();
+            console.log("STARTER TOKEN:",token);
+            if(token === null){
+              if(location.pathname === "/" || location.pathname === "/welcome"){
+                navigate("/login");
+              }
             }
+            else{
+              navigate("/home");
+            } 
+          }
+        setTimeout(() => {
+              getTokenAndNavigate();
         }, 1800);
     },[]);
 

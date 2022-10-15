@@ -67,25 +67,15 @@ function App() {
   useEffect(() => {
     // whenBrowserOpened();
     // whenBrowserClosed();
-    const getTokenAndNavigate = async () => {
-      const token = await getToken();
-      console.log("STARTER TOKEN:",token);
-      if(token !== null){
-        if(location.pathname === "/welcome" || location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/email-verification" || location.pathname === "/enter-code"){
-          navigate("/");
-        }
-      }
-      else{
-        navigate("/login");
-      } 
-    }
-    getTokenAndNavigate();
+    
   },[]);
 
   return (
     <MainContext.Provider value={ContextData}>
       <Routes>
         <Route path="/welcome" element={<Welcome />}/>
+        <Route path="/home" element={<HomePage />}/>
+
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/signup/business" element={<BusinessSignUp />}/>
@@ -93,7 +83,7 @@ function App() {
         <Route path="/verify/email" element={<EmailVerification />}/>
         <Route path="/verify/entercode" element={<EnterCode />}/>
 
-        <Route path="/" element={<HomePage />}/>
+        <Route path="/" element={<Welcome />}/>
         <Route path="/categories/:category" element={<Categories />}/>
         <Route path="/user/profile" element={<UserProfile />}/>
         <Route path="/user/wallet" element={<Wallet />}/>
