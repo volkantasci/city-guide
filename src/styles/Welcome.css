@@ -10,12 +10,7 @@
     width: 100vw;
     height: 50vh;
 }
-#part1{
-    background-color: rgb(189, 56, 59);
-}
-#part2{
-    background-color: rgb(233, 85, 148);
-}
+
 .welcome-video{
     position: absolute;
     z-index: 2;
