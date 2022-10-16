@@ -38,7 +38,7 @@ font-family: 'Poppins', sans-serif;
 }
 .payment-title{
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100vw;
     height: 100px;
@@ -57,7 +57,7 @@ font-family: 'Poppins', sans-serif;
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 35px;
+    top: 55px;
     left: 32px;
 }
 .payment-cards-container{

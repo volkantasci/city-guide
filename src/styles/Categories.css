@@ -14,6 +14,12 @@ html {
     height: 600px;
     overflow-y: scroll;
 }
+#categories-city-guide-logo{
+    position: absolute;
+    top: 50px;
+    margin: 0 auto;
+
+}
 
 .category-header{
     position: fixed;

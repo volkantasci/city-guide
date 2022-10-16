@@ -24,7 +24,7 @@ font-family: 'Poppins', sans-serif;
 .city-logo{
     width: 100vw;
     position: absolute;
-    top: 32px;
+    top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
