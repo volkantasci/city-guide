@@ -26,24 +26,16 @@ export default function Activity({data}) {
                 <img src={ galleries.length > 0 ? galleries[0].image : null } alt={"photo"} />
             </div>
             <div className='activity-buttons'>
-                {category === "Museums" ? (
+            
                     <div className='reservation' onClick={() => {
+
                         navigate("/payment");
                     }}>
-                        Buy Ticket
+
+                    {category === "Museums" ? "Buy Ticket" : "Reservation"}
+              
                     </div>
-                ) : category === "Pray" ? (
-                    null
-                ) : 
-                (
-                    <div className='reservation' onClick={() => {
-                        navigate("/payment");
-                    }}>
-                    Reservation
-                    </div>
-                )
-                }
-                
+               
                 <div className='go-location'>
                     How Can I go?
                 </div>
