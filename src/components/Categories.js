@@ -21,10 +21,6 @@ export default function Categories() {
         });
         const data = await response.json();
         if(response.status === 200){
-            data.reverse();
-            let swapData = data[7];
-            data[7] = data[10];
-            data[10] = swapData;
             setCategories(data);
         }
     }

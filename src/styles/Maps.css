@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+*/
+.maps-container{
+    width: 100%;
+    height: 100vh;
+}
+.maps-back-button{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background-color: rgba(228, 96, 144, 0.8);
+    border: 1px solid #fff;
+    
+}
+
+.gmnoprint{
+    display: none;
+}
+.maps-logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(215, 52, 112);
+}

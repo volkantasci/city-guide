@@ -14,16 +14,22 @@ export default function Activity({data}) {
     },[data])
 
   return (
-    <div className='activity'>
-            <div className='activity-header'>
+    <div className='activity' >
+            <div onClick={()=>{
+                    navigate("/activity");
+                }} className='activity-header'>
                 {data.name}
             </div>
-            <div className='activity-location'>
+            <div onClick={()=>{
+                    navigate("/activity");
+                }} className='activity-location'>
                 {data.address.address}
             </div>
             <div className='activity-photo'>
                 {/* <img src={ require("../../assets/images/safari.png") } alt={"photo"} /> */}
-                <img src={ galleries.length > 0 ? galleries[0].image : null } alt={"photo"} />
+                <img onClick={()=>{
+                    navigate("/activity");
+                }} src={ galleries.length > 0 ? galleries[0].image : null } alt={"photo"} />
             </div>
             <div className='activity-buttons'>
             

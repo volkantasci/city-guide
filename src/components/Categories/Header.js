@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../styles/Categories.css'
-import funs from  '../../assets/svgs/funs.svg'
 import showMap from '../../assets/svgs/showMap.svg'
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -51,7 +50,9 @@ export default function Header({showAlcohol,categoryName}) {
            </div>
         </div>
 
-        <div className='show-maps'>
+        <div className='show-maps' onClick={() => {
+            navigate("/maps");
+        }}>
             <img src={showMap} alt={"showMap"} />
         </div>
     </div>
