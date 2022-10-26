@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react'
 import "../styles/Maps.css"
 import { useNavigate } from 'react-router-dom';
-import {useLoadScript} from '@react-google-maps/api';
 import { GoogleMap, Polygon, useJsApiLoader } from "@react-google-maps/api";
 
 export default function Maps() {

@@ -23,6 +23,7 @@ import Payment from './pages/Payment';
 import Welcome from './pages/Welcome';
 import Maps from './pages/Maps';
 import ActivityPage from './pages/ActivityPage';
+import ActivityDetails from './pages/ActivityDetails';
 
 
 function App() {
@@ -90,6 +91,7 @@ function App() {
         <Route path="/" element={<Welcome />}/>
         <Route path="/categories/:category" element={<Categories />}/>
         <Route path="/activity" element={<ActivityPage />}/>
+        <Route path="/activity-details" element={<ActivityDetails />}/>
         <Route path="/user/profile" element={<UserProfile />}/>
         <Route path="/user/wallet" element={<Wallet />}/>
         <Route path="/user/savecard" element={<SaveCard />}/>
