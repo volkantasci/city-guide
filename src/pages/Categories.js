@@ -40,6 +40,7 @@ export default function Categories() {
             }
         });
         const data = await response.json();
+        data.reverse();
         setSubCategoryData(data);
     }
     // var slideCounter = 1;

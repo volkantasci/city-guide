@@ -91,7 +91,9 @@ export default function ActivityPage() {
             <div className='activity-page-navigation-item'>
                 Reservation
             </div>
-            <div className='activity-page-navigation-item'>
+            <div className='activity-page-navigation-item' onClick={()=>{
+                navigate("/activity-details");
+            }}>
                 Info
             </div>
             

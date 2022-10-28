@@ -157,7 +157,8 @@ font-family: 'Poppins', sans-serif;
     -moz-box-shadow: 0px 0px 2px 0px rgba(191,191,191,1);
     box-shadow: 0px 0px 2px 0px rgba(191,191,191,1);
     border-radius: 5px;
-    background-color: rgba(179, 18, 76, 0.67);
+    /* background-color: rgba(179, 18, 76, 0.67); */
+    background-color: #fff;
 }
 .activity-page-navigation-item:nth-of-type(1), .activity-page-navigation-item:nth-of-type(3){
     background-color: #fff;
