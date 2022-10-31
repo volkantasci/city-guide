@@ -25,7 +25,7 @@ export default function Header({showAlcohol,categoryName}) {
             <label className="switch">
                 <input onChange={()=>{
                     handleAlcoholButton();
-                }} type="checkbox" checked />
+                }} type="checkbox" />
                 <span className="slider round">
                 </span>
             </label>
