@@ -91,12 +91,14 @@ function App() {
         <Route path="/" element={<Welcome />}/>
         <Route path="/categories/:category" element={<Categories />}/>
         <Route path="/activity" element={<ActivityPage />}/>
-        <Route path="/activity-details" element={<ActivityDetails />}/>
+        <Route path="/activity-details/:menuorhistory" element={<ActivityDetails />}/>
         <Route path="/user/profile" element={<UserProfile />}/>
         <Route path="/user/wallet" element={<Wallet />}/>
         <Route path="/user/savecard" element={<SaveCard />}/>
         <Route path="/select-card" element={<SelectCardToPayment />}/>
         <Route path="/payment" element={<Payment />}/>
+        <Route path="/test" element={<Test />}/>
+
 
 
         <Route path="/logout" element={<Logout />}/>

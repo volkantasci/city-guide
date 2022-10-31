@@ -37,12 +37,11 @@ export default function Activity({data}) {
 
                         navigate("/payment");
                     }}>
-
                     {category === "Museums" ? "Buy Ticket" : "Reservation"}
-              
                     </div>
-               
-                <div className='go-location'>
+                <div className='go-location' onClick={()=>{
+                    navigate("/maps");
+                }}>
                     How Can I go?
                 </div>
             </div>

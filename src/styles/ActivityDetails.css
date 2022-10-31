@@ -30,8 +30,8 @@
     top: -30px;
 }
 .activity-details-image-section{
-    width: 338px;
-    height: 254px;
+    width: 400px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -43,8 +43,8 @@
     box-shadow: 0px 0px 2px 0px rgba(199,199,199,1);
 }
 .activity-details-image-section > img{
-    width: 311px;
-    height: 170px;
+    width: 391px;
+    height: 240px;
     margin-top: 20px;
     border-radius: 15px;
 }

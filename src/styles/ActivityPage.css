@@ -37,11 +37,12 @@ font-family: 'Poppins', sans-serif;
 }
 .activity-page-image-container{
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-image: url(../assets/images/activityPhoto.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 .activity-page-image-back-button{
     position: absolute;
