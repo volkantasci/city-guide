@@ -35,6 +35,7 @@ function App() {
   const [paymentMethod, setPaymentMethod] = useState(null);
   const [addCardComponentActive, setAddCardComponentActive] = useState(false);
   const [editDeleteData, setEditDeleteData] = useState(false);
+  const [alcoholEnabled, setAlcoholEnabled] = useState(true);
   const navigate = useNavigate();
   const ContextData = {
     error,
@@ -48,30 +49,10 @@ function App() {
     addCardComponentActive,
     setAddCardComponentActive,
     editDeleteData,
-    setEditDeleteData
+    setEditDeleteData,
+    alcoholEnabled, 
+    setAlcoholEnabled
   };
-
- 
-  // const whenBrowserClosed = () => {
-  //   window.addEventListener("beforeunload", (ev) => 
-  //     {  
-  //         localStorage.removeItem("welcomeState");
-  //     });
-  // }
-
-
-  // const whenBrowserOpened = () => {
-  //   if(localStorage.getItem("welcomeState") === null){
-  //     localStorage.setItem("welcomeState",true);
-  //     navigate("/welcome");
-  //   }
-  // }
-
-  useEffect(() => {
-    // whenBrowserOpened();
-    // whenBrowserClosed();
-    
-  },[]);
 
   return (
     <MainContext.Provider value={ContextData}>

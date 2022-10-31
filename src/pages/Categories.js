@@ -9,7 +9,7 @@ import { MainContext,useContext } from '../Context';
 
 export default function Categories() {
     const navigate  =useNavigate();
-    let { category } = useParams();
+    let { category,subcategory } = useParams();
 
     const {selectedSubCategory,setSelectedSubCategory} = useContext(MainContext);
     const [subCategoryData, setSubCategoryData] = useState([]);
@@ -65,8 +65,11 @@ export default function Categories() {
         return item.top_category === categoryId;
       });
       if(filteredData.length > 0){
-        setSelectedSubCategory(filteredData[0]["id"]);
-        console.log("Selected SubCategory ID:",filteredData[0]["id"]);
+        if(selectedSubCategory === null){
+          setSelectedSubCategory(filteredData[0]["id"]);
+          console.log("Selected SubCategory ID:",filteredData[0]["id"]);
+        }
+        
       }
     },[subCategoryData]);
 

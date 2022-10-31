@@ -1,14 +1,20 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import '../../styles/Categories.css'
 import showMap from '../../assets/svgs/showMap.svg'
 import { useNavigate, useParams } from 'react-router-dom'
+import { MainContext } from '../../Context'
 
 
 export default function Header({showAlcohol,categoryName}) {
+    const {alcoholEnabled,setAlcoholEnabled} = useContext(MainContext);
     const navigate = useNavigate();
     let { category } = useParams();
+
     const handleBackButton = () => {
         navigate("/home");
+    }
+    const handleAlcoholButton = () => {
+        setAlcoholEnabled(!alcoholEnabled);
     }
   return (
     <div className='category-header' style={{"height" : category === "History" || category === "Nature" || category === "Museums" ? "200px" : null}}>
@@ -17,7 +23,9 @@ export default function Header({showAlcohol,categoryName}) {
                 Alcohol
             </div>
             <label className="switch">
-                <input type="checkbox" />
+                <input onChange={()=>{
+                    handleAlcoholButton();
+                }} type="checkbox" checked />
                 <span className="slider round">
                 </span>
             </label>
