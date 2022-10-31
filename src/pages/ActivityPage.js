@@ -4,6 +4,8 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import Navigation from '../components/Navigation';
 import { useParams } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export default function ActivityPage() {
     const { activityName,imageUrl } = useParams();
@@ -36,6 +38,17 @@ export default function ActivityPage() {
       <div className='activity-page-body'>
       {/* style={{ "backgroundImage":`url(${imageUrl})` }} */}
         <div className='activity-page-image-container' >
+        <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide><img className='activity-page-image' src={ require("../assets/images/activityPhoto.png") }  /></SwiperSlide>
+            <SwiperSlide><img className='activity-page-image' src={ require("../assets/images/activityPhoto.png") }  /></SwiperSlide>
+            <SwiperSlide><img className='activity-page-image' src={ require("../assets/images/activityPhoto.png") }  /></SwiperSlide>
+            <SwiperSlide><img className='activity-page-image' src={ require("../assets/images/activityPhoto.png") }  /></SwiperSlide>
+          </Swiper>
           <svg className='activity-page-image-back-button' width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={()=>{
             navigate(-1);
           }}>
@@ -108,7 +121,7 @@ export default function ActivityPage() {
         {isLoaded ? (
           <GoogleMap 
           id="shapes-example"
-          mapContainerStyle={{"width" : "100%", "height" : "300px"}}
+          mapContainerStyle={{"width" : "100%", "height" : "400px"}}
           zoom={15}
           center={{lat: 41.011674460557494, lng: 28.983357368700265}}
           options={defaultMapOptions}
